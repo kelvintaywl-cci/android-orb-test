@@ -2,6 +2,9 @@ version: 2.1
 
 jobs:
   job:
+    parameters:
+      matrix:
+        type: boolean
     docker:
       - image: circleci/python:3
     steps:
@@ -10,4 +13,5 @@ jobs:
 workflows:
   wf:
     jobs:
-      - job
+      - job:
+          matrix: true
