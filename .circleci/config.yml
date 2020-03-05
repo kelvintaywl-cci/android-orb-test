@@ -14,6 +14,7 @@ workflows:
   wf:
     jobs:
       - job:
+          message: hello
           matrix:
             parameters:
               message: [hello, goodbye]
