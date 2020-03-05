@@ -3,15 +3,17 @@ version: 2.1
 jobs:
   job:
     parameters:
-      matrix2:
-        type: boolean
+      message:
+        type: string
     docker:
       - image: circleci/python:3
     steps:
-      - run: echo hi
+      - run: echo << parameters.string >>
 
 workflows:
   wf:
     jobs:
       - job:
-          matrix2: true
+          matrix:
+            parameters:
+              message: [hello, goodbye]
