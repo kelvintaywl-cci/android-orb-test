@@ -4,6 +4,8 @@ jobs:
   job:
     docker:
       - image: circleci/python:3
+    steps:
+      - run: echo hi
 
 workflows:
   wf:
