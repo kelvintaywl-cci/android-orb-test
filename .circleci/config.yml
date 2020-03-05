@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  job:
+    docker:
+      - image: circleci/python:3
+
+workflows:
+  wf:
+    jobs:
+      - job
