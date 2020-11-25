@@ -19,4 +19,6 @@ workflows:
     jobs:
       - job:
           message: hello
+      - my-approval-job:
+          type: approval
           
