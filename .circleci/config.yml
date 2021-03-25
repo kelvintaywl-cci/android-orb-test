@@ -14,13 +14,6 @@ jobs:
 workflows:
   version: 2
   wf:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
     jobs:
       - job:
           message: hello
