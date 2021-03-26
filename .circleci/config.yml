@@ -17,4 +17,9 @@ workflows:
     jobs:
       - job:
           message: hello
+      - job:
+          message: im a tag
+          filters:
+            tags:
+              only: /alex-tag.*/
           
