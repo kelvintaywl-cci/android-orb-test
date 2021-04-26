@@ -1,6 +1,5 @@
 version: 2.1
 
-
 jobs:
   job:
     parameters:
@@ -17,9 +16,3 @@ workflows:
     jobs:
       - job:
           message: hello
-      - job:
-          message: im a tag
-          filters:
-            tags:
-              only: /alex-tag.*/
-          
