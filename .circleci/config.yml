@@ -16,6 +16,10 @@ workflows:
   wf:
     jobs:
       - job:
+          name: job-1
           message: hello
       - job:
+          name: job-2
           message: goodbye
+          requires:
+            - job-1
