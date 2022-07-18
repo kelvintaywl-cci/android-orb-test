@@ -22,10 +22,6 @@ jobs:
 
       - android/start-emulator:
           avd-name: ci-android-avd
-          wait-for-emulator: false
-
-      # Now wait for emulator to fully start
-      - android/wait-for-emulator
 
 workflows:
   test:
