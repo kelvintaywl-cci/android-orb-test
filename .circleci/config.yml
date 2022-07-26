@@ -11,7 +11,7 @@ jobs:
 
     executor:
       name: android/android-machine
-      tag: 202102-01
+      tag: 2022.06.2
       resource-class: large
     
     steps:
